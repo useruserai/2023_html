@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background: #095F8C;
+                background-color: #FFC;
+                background-image: url(img/background.jpg);
+            }
+
+            .header{
+                background: white ;
+                width: 90%;
+                margin: 50px auto;
+                overflow: hidden;
+            }
+            .container{
+                width: 90%;
+                margin: 50px auto;
+                background: #E9E9E7;
+                overflow: hidden;
+            }
+            .left-column{
+                width: 40%;
+                padding : 30px;
+                float : left;
+            }
+            .right-column{
+                width: 50%;
+                padding : 30px;
+                float : right;
+            }
+            .section{
+                background: #9ACCCB;
+                padding: 10px;
+                margin : 30px 20px 40px 20px;
+                border-radius: 5px;
+                box-shadow: 5px 5px 5px black;
+                overflow: hidden;
+            }
+            .profile-img{
+                width:300px; height:300px;
+                border :5px solid black;
+                border-radius:50%;
+                background-image: url("img/profile-img.jpg");
+                background-size:cover;
+                background-position: center;
+                margin:0 auto;
+                margin-bottom: 20px;
+            }
+            li{
+                margin-bottom:5px
+            }
+            h2{
+                color: #487E70;
+            }
+            h3{
+                color: #487E70;
+            }
+            .footer{
+                background: white ;
+                width: 90%;
+                margin: 50px auto;
+                overflow: hidden;
+            }
+            table{border:3px solid gray; border-collapse: collapse; border-spacing: 5}
+            table thead{background-color: #487E70;}
+            table tbody{font-style: oblique;}
+            table tfoot{color : gray;}
+            
+        </style>
+    </head>
+    <body>
+        <div class ="header">
+            <span style="font-size : 32pt; color:#487E70; font-family : arial;">수상 실적이 증명하는_인공지능학과 <b>장 서 연    </b></span>
+            <img src="img/susang.png">
+        </div>
+        <div class ="container">
+            <div class = "left-column">
+                <!--biography-->
+                <div class ="section">
+                    <h2>Biography</h2>
+                    <div class = "profile-img"></div>
+                    <ul>
+                        <li><b>이름 : 장서연</b></li>
+                        <li>영문 : Jang Seo Yeon</li>
+                        <li>연락처 : 010.2144.8692</li>
+                        <li>Email: <a href ="mailto: hi-09114@naver.com">hi-09114@naver.com</a></li>
+                    </ul>
+                </div>
+
+                <!--학력-->
+                <div class ="section">
+                    <h2>학력</h2>
+                    <ul>
+                        <li>고등학교: 선유고등학교(2018.3~2021.2)</li>
+                        <li>대학교: 가톨릭대학교(2021.3~2024.8)</li>
+                        <li>학부: 인공지능학과</li>
+                    </ul>
+                </div>
+
+                <!--기술스킬-->
+                <div class ="section">
+                    <h2>기술 스킬</h2>
+                    <ul>
+                        <li>[python] 상</li>
+                        <li>[C, C++,JAVA, HTML, CSS, JS]</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class = "right-column">
+                <!--프로젝트-->
+                <div class ="section">
+                    <h2>프로젝트</h2>
+                    <ul><h3>공모전</h3>
+                        <li>무라벨 페트병을 대체하는 리무버블 스티커</li>
+                        <li>시선추적기술을 활용한 음주측정 및 광고 플랫폼</li>
+                    </ul>
+                    <hr>
+                    <ul><h3>자연어처리</h3>
+                        <li>(딥러닝/5인)언론 인식 제고를 위한 뉴스기사 판별 AI</li>
+                        <li>(컴퓨터와프로그래밍2/5인) 편향된 영화리뷰 분석</li>
+                    </ul>
+                    <hr>
+                    <ul><h3>데이터분석</h3>
+                        <li>(데이터수집 및 프로그래밍/3인) 대학 장학금의 현황과 의의</li>
+                        <li>(머신러닝/개인) 병원 개폐업의 원인 분석</li>
+                    </ul>
+                    <hr>
+                    <ul><h3>컴퓨터비전</h3>
+                        <li>(경진대회/3인) 영상 편집 저작권 경고 AI</li>
+                        <li>(인공지능프로그래밍/3인) 먹는샘물 위반 AI.</li>
+                    </ul>
+    
+                </div>
+
+                <!--수상-->
+                <div class ="section">
+                    <h2>수상</h2>
+                    <ul>
+                        <li>(장려상) 2023 전국민 과학치안 아이디어 공모전</li>
+                        <li>(우수상) 가톨릭대학교 인공지능 및 데이터 사이언스 경진대회</li>
+                        <li>(대상) 기업의 탄소중립실천 확산을 위한 아이디어 공모전</li>
+                    </ul>
+    
+                </div>
+
+                <!--언어및 자격증-->    
+                <div class ="section">
+                    <h2>언어 및 자격증</h2>
+                    <ul>
+                        <li>[python] 상</li>
+                        <li>[C, C++,JAVA, HTML, CSS, JS]</li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+        <div class ="footer">
+            <div class="section">
+               <!--전공수강내역-->
+            <table border ="3" height = "200" width ="100%">
+                <caption><h2>전공 수강 내역</h2></caption>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th>1학기</th>
+                        <th>2학기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th align="right">2학년</th>
+                        <td><b>(AI 기초수학)</b>, <b>선형대수</b>, <b>인공지능프로그래밍</b>, <b>확률과통계</b></td>
+                        <td>비즈니스를위한데이터마이닝, 머신러닝, 신호와시스템,<b>인공지능을위한이산수학</b></td>
+                    </tr>
+                    <tr>
+                        <th align="right">3학년</th>
+                        <td><b>객체지향프로그래밍</b>,<b>데이터수집을위한프로그래밍</b>,<b>딥러닝</b>,<b>인공지능학캡스톤디자인1</b>,컴퓨터네트워크기초</td>
+                        <td>알고리즘,데이터학습과지능,강화학습1,컴퓨터구조론,웹프로그래밍</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="2"align = "center">3학년1학기 기준 4.2/4.5</td>
+                    <td align = "center">A는 bold 표시</td>
+                </tfoot>
+            </table>
+        </div>
+
+    </body>
+</html>
+

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo</title>
+        <style>
+            .header{
+                background: white ;
+                width: 90%;
+                margin: 50px auto;
+                overflow: hidden;
+            }
+
+            body{
+                font-family:Arial, Helvetica,sans-serif;
+                background-color : #f7f7f7;
+                background-image: url(img/background.jpg);
+            }
+            h1{
+                text-align :cneter;
+                margin-bottom: 30px;
+            }
+            img{
+                width: 100%; height:auto;
+                margin: 0 auto;
+            }
+            .image-container{
+                display:grid;
+                grid-template-columns: repeat(4,1fr);
+                margin: 10px;
+                background-color: #ffffff;
+                border-radius : 10px;
+                box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+            }
+            .card{
+                background-color: #ffffff;
+                padding:10px;
+                margin:10px;
+                border-radius:10px;
+                box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            }
+            .card-description{
+                background-color : #f2f2f2;
+                padding :10px;
+                border-radius: 5px;
+                margin-top: 10px;
+                text-align :center
+            }
+        </style>
+        <script>
+            function OnChange(date){
+                let year = date.value;
+                let cardNews = '';
+                if(year =='all'){
+                    cardNews =
+                    '<div class = "image-container">' +
+                        '<div class = "card">'+
+                            '<iframe src="https://www.youtube.com/embed/7dix0yeGYt8?si=bEKZQOe6DLNb06iT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'+
+                            '<div class = "card-description">유퀴즈 온더 가대</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<iframe src="https://www.youtube.com/embed/Z9_55LiUhv8?si=SN-zw9GSAv6rzt72&amp;start=2740" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'+
+                            '<div class = "card-description">학생참여 사례영상 경진대회</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<iframe src="https://www.youtube.com/embed/3jF2Yk9nj-E?si=-RJmdcZNzMBTNR_X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'+
+                            '<div class = "card-description">가톨릭대학교 온라인 성과 공유회</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<a href ="https://m.edaily.co.kr/news/Read?newsId=02335366632559176&mediaCodeNo=257&utm_source=https://www.google.com/">'+
+                            '<img src = "img/esg.png">'+
+                            '<div class = "card-description">[대상/한국소비자원]</div>'+
+                            '</a>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<a href ="https://www.thekpm.com/news/articleView.html?idxno=169031">'+
+                            '<img src = "img/kist.png">'+
+                            '<div class="card-description">[장려상/KIST]</div>'+
+                            '</a>'
+                        '</div>'
+                }
+                else if(year =='2023'){
+                    cardNews =
+                    '<div class = "image-container">' +
+                        '<div class = "card">'+
+                            '<a href ="https://www.thekpm.com/news/articleView.html?idxno=169031">'+
+                            '<img src = "img/kist.png">'+
+                            '<div class="card-description">[장려상/KIST]</div>'+
+                            '</a>'
+                        '</div>'
+                    
+                    }
+                else if(year =='2022'){
+                    cardNews =
+                    '<div class = "image-container">' +
+                        '<div class = "card">'+
+                            '<a href ="https://m.edaily.co.kr/news/Read?newsId=02335366632559176&mediaCodeNo=257&utm_source=https://www.google.com/">'+
+                            '<img src = "img/esg.png">'+
+                            '<div class = "card-description">[대상/한국소비자원]</div>'+
+                            '</a>'+
+                            '</div>'
+                }
+                else if(year =='2021'){
+                    cardNews =
+                    '<div class = "image-container">' +
+                        '<div class = "card">'+
+                            '<iframe src="https://www.youtube.com/embed/7dix0yeGYt8?si=bEKZQOe6DLNb06iT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'+
+                            '<div class = "card-description">유퀴즈 온더 가대</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<iframe src="https://www.youtube.com/embed/Z9_55LiUhv8?si=SN-zw9GSAv6rzt72&amp;start=2740" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'+
+                            '<div class = "card-description">학생참여 사례영상 경진대회</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<iframe src="https://www.youtube.com/embed/3jF2Yk9nj-E?si=-RJmdcZNzMBTNR_X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'+
+                            '<div class = "card-description">가톨릭대학교 온라인 성과 공유회</div>'+
+                        '</div>'+
+                    '</div>';
+                }
+                else if(year == 'susang'){
+                    cardNews =
+                    '<div class = "image-container">'+
+
+                        '<div class = "card">'+
+                            '<img src = "img/img (1).png">'+
+                            '<div class = "card-description">[대상/한국소비자원]</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<img src = "img/img (2).png">'+
+                            '<div class = "card-description">[장려상/한국소비자원]</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<img src = "img/img (3).png">'+
+                            '<div class = "card-description">[최우수상/가톨릭대학교]</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<img src = "img/img (4).png">'+
+                            '<div class = "card-description">[장려상/KIST한국과학기술원]</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<img src = "img/img (5).png">'+
+                            '<div class = "card-description">[최우수상/가톨릭대학교]</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<img src = "img/img (6).png">'+
+                            '<div class = "card-description">[장려상/대학혁신지원사업]</div>'+
+                        '</div>'+
+
+                        '<div class = "card">'+
+                            '<img src = "img/img (7).png">'+
+                            '<div class = "card-description">[우수상/가톨릭대학교]</div>'+
+                        '</div>'+
+                    '</div>';
+                           }
+
+                let photo = document.getElementById('photo_album');
+                photo.innerHTML = cardNews;
+            }
+
+        </script>
+
+        <body>
+            <div class ="header">
+                <span style="font-size : 32pt; color:#487E70; font-family : arial;">수상 실적이 증명하는_인공지능학과 <b>장 서 연    </b></span>
+                <img src="img/susang.png" style="width:500px;height:auto;">
+            </div>
+
+            <h1>Photo Album</h1>
+            <select id ="date" onchange = "OnChange(date)">
+                <option value = "all">전체</option>
+                <option value = "2023">2023</option>
+                <option value = "2022">2022</option>
+                <option value = "2021">2021</option>
+                <option value = "susang">상장</option>          
+            </select>
+
+            <div id = "photo_album">
+
+                <div class = "image-container" id = "2023">
+                    <div class = "card">
+                        <a href ="https://www.thekpm.com/news/articleView.html?idxno=169031">
+                            <img src = "img/kist.png">
+                            <div class="card-description">시선추적기술활용 음주측정</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "image-container" id = "2022">
+                    <div class = "card">
+                        <a href ="https://m.edaily.co.kr/news/Read?newsId=02335366632559176&mediaCodeNo=257&utm_source=https://www.google.com/">
+                            <img src = "img/esg.png">
+                            <div class = "card-description">리무버블스티커라벨</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "image-container" id = "2021">
+                    <div class = "card">
+                        <iframe src="https://www.youtube.com/embed/7dix0yeGYt8?si=bEKZQOe6DLNb06iT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class = "card-description">유퀴즈 온더 가대</div>
+                    </div>
+
+                    <div class = "card">
+                        <iframe src="https://www.youtube.com/embed/Z9_55LiUhv8?si=SN-zw9GSAv6rzt72&amp;start=2740" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class = "card-description">학생참여 사례영상 경진대회</div>
+                    </div>
+
+                    <div class = "card">
+                        <iframe src="https://www.youtube.com/embed/3jF2Yk9nj-E?si=-RJmdcZNzMBTNR_X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class = "card-description">가톨릭대학교 온라인 성과 공유회</div>
+                    </div>
+                </div>
+
+                <div class = "image-container" id="susang">
+                    <div class = "card">
+                        <img src = "img/img (1).png">
+                        <div class = "card-description">[대상/한국소비자원]</div>
+                    </div>
+                    <div class = "card">
+                        <img src = "img/img (2).png">
+                        <div class = "card-description">[장려상/한국소비자원]</div>
+                    </div>
+                    <div class = "card">
+                        <img src = "img/img (3).png">
+                        <div class = "card-description">[최우수상/가톨릭대학교]</div>
+                    </div>
+                    <div class = "card">
+                        <img src = "img/img (4).png">
+                        <div class = "card-description">[장려상/KIST한국과학기술원]</div>
+                    </div>
+                    <div class = "card">
+                        <img src = "img/img (5).png">
+                        <div class = "card-description">[최우수상/가톨릭대학교]</div>
+                    </div>
+                    <div class = "card">
+                        <img src = "img/img (6).png">
+                        <div class = "card-description">[장려상/대학혁신지원사업]</div>
+                    </div>
+                    <div class = "card">
+                        <img src = "img/img (7).png">
+                        <div class = "card-description">[우수상/가톨릭대학교]</div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </body>
+    </head>
+</html>
